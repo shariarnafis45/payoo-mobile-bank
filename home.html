@@ -1,12 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo | Home</title>
-</head>
-<body>
-    Home
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo | Login</title>
+    <!-- fav Icon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <!-- tailwind + Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awosome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen max-w-md mx-auto bg-base-300">
+    <header class="bg-white border-b-1 border-neutral-300">
+      <section class="w-11/12 mx-auto flex justify-between items-center py-3">
+        <div class="left flex gap-2 items-center">
+          <div class="logo max-w-[60px]">
+            <img src="./assets/logo.png" alt="" />
+          </div>
+          <div>
+            <h2 class="font-bold text-[1.3rem]">$45000</h2>
+            <p class="text-neutral/50 font-medium">Available Balance</p>
+          </div>
+        </div>
+        <div class="right">
+          <button>
+            <a href="./index.html" class="btn btn-primary shadow-lg"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+            >
+          </button>
+        </div>
+      </section>
+    </header>
+    <section class="bg-white">
+      <div class="w-11/12 mx-auto py-8">
+        <div class="space-y-5">
+          <h2 class="text-3xl font-bold">
+            Welcome to Pay<span class="text-primary">oo</span>
+          </h2>
+          <p class="text-neutral/50">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+        <div class="buttons mt-6 grid grid-cols-3 gap-3">
+          <button class="btn hover:bg-primary hover:text-white flex-col h-full p-5">
+            <img src="./assets/opt-1.png" alt="" />
+            <h2 class="font-semibold text-[1rem]">Add Money</h2>
+          </button>
+          <button class="btn hover:bg-primary hover:text-white  flex-col h-full p-5">
+            <img src="./assets/opt-2.png" alt="" />
+            <h2 class="font-semibold text-[1rem]">Cashout</h2>
+          </button>
+          <button class="btn hover:bg-primary hover:text-white  flex-col h-full p-5">
+            <img src="./assets/opt-3.png" alt="" />
+            <h2 class="font-semibold text-[1rem]">Transfer Money</h2>
+          </button>
+          <button class="btn hover:bg-primary hover:text-white flex-col h-full p-5">
+            <img src="./assets/opt-4.png" alt="" />
+            <h2 class="font-semibold text-[1rem]">Get Bonus</h2>
+          </button>
+          <button class="btn hover:bg-primary hover:text-white flex-col h-full p-5">
+            <img src="./assets/opt-5.png" alt="" />
+            <h2 class="font-semibold text-[1rem]">Pay Bill</h2>
+          </button>
+          <button class="btn hover:bg-primary hover:text-white flex-col h-full p-5">
+            <img src="./assets/opt-6.png" alt="" />
+            <h2 class="font-semibold text-[1rem]">Transaction</h2>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script/login.js"></script>
+  </body>
 </html>
