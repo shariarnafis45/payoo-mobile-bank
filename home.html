@@ -109,8 +109,65 @@
       </div>
     </section>
 
-    <!-- cashout Form -->
+    <!-- Add money from -->
     <section class="w-11/12 mx-auto py-8">
+        <h2 class="font-bold mb-4">Add Money</h2>
+        <div class="w-full">
+            <fieldset
+            class="fieldset bg-white border-base-300 rounded-2xl w-full border p-8"
+            >
+            <label class="label font-medium text-neutral text-[1rem]"
+                >Select A Bank</label>
+
+            <select class="select w-full bg-base-200 border-none rounded-full text-neutral-600">
+                <option disabled selected class="">Select bank</option>
+                <option value="UCB">UCB</option>
+                <option value="Islami">Islami Bank</option>
+                <option value="City">City Bank</option>
+            </select><br>
+
+            <label class="label font-medium text-neutral text-[1rem]"
+                >Bank Account Number</label
+            >
+            <input
+                id="add-money-account"
+                type="text"
+                class="input rounded-full bg-base-200 border-none"
+                placeholder="Enter Agent 11 Digit Account Number"
+                maxlength="11"
+                minlength="11"
+            />
+            <label class="label font-medium text-neutral text-[1rem] mt-5"
+                >Amount To Add</label
+            >
+            <input
+                id="add-money-amount"
+                type="number"
+                class="input rounded-full bg-base-200 border-none"
+                placeholder="Enter amount to withdraw"
+                
+            />
+
+            <label class="label font-medium text-neutral text-[1rem] mt-5"
+                >4 Digit Pin</label
+            >
+            <input
+                id="add-money-pin"
+                type="password"
+                class="input rounded-full bg-base-200 border-none"
+                placeholder="Enter 4 digit pin number"
+                maxlength="4"
+            
+            />
+
+            <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">
+                Add Money
+            </button>
+            </fieldset>
+        </div>
+    </section>
+    <!-- cashout Form -->
+    <section class="w-11/12 mx-auto py-8 hidden">
         <h2 class="font-bold mb-4">Cash Out</h2>
         <div class="w-full">
             <fieldset
@@ -156,6 +213,8 @@
             </fieldset>
         </div>
     </section>
+
+    
 
 
     <script src="./script/machine.js"></script>
