@@ -86,6 +86,7 @@
           </button>
           <button
             class="btn hover:bg-primary hover:text-white flex-col h-full p-5"
+            onclick="showOnly('transfer-money')"
           >
             <img src="./assets/opt-3.png" alt="" />
             <h2 class="font-semibold text-[1rem]">Transfer Money</h2>
@@ -170,6 +171,53 @@
             </fieldset>
         </div>
     </section>
+    <!-- Transfer Money Form -->
+    <section id="transfer-money" class="w-11/12 mx-auto py-8 hidden">
+        <h2 class="font-bold mb-4">Transfer Money</h2>
+        <div class="w-full">
+            <fieldset
+            class="fieldset bg-white border-base-300 rounded-2xl w-full border p-8"
+            >
+            <label class="label font-medium text-neutral text-[1rem]"
+                >User Account Number</label
+            >
+            <input
+                id="user-account-number"
+                type="text"
+                class="input rounded-full bg-base-200 border-none"
+                placeholder="Enter 11 Digit User Account Number"
+                maxlength="11"
+                minlength="11"
+            />
+            <label class="label font-medium text-neutral text-[1rem] mt-5"
+                >Amount</label
+            >
+            <input
+                id="transfer-amount"
+                type="number"
+                class="input rounded-full bg-base-200 border-none"
+                placeholder="Enter amount to Transfer"
+                
+            />
+
+            <label class="label font-medium text-neutral text-[1rem] mt-5"
+                >Pin Number</label
+            >
+            <input
+                id="transfer-pin"
+                type="password"
+                class="input rounded-full bg-base-200 border-none"
+                placeholder="Enter Your 4 digit pin number"
+                maxlength="4"
+            
+            />
+
+            <button id="transfer-btn" class="btn btn-primary mt-4 rounded-full">
+                Transfer Money
+            </button>
+            </fieldset>
+        </div>
+    </section>
     <!-- cashout Form -->
     <section id="cash-out" class="w-11/12 mx-auto py-8 hidden">
         <h2 class="font-bold mb-4">Cash Out</h2>
@@ -230,7 +278,9 @@
 
 
     <script src="./script/machine.js"></script>
+    <script src="./script/transferMoney.js"></script>
     <script src="./script/addMoney.js"></script>
+    
     <script src="./script/cashout.js"></script>
   </body>
 </html>
