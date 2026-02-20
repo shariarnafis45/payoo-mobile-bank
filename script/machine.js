@@ -29,12 +29,14 @@ function showOnly(id){
     const transaction = document.getElementById('history');
     const transferMoney = document.getElementById('transfer-money');
     const getBonus = document.getElementById('coupon');
+    const payBill = document.getElementById('pay-bill');
     // hide all 
     addMoney.classList.add('hidden');
     cashOut.classList.add('hidden');
     transaction.classList.add('hidden');
     transferMoney.classList.add('hidden');
     getBonus.classList.add('hidden');
+    payBill.classList.add('hidden');
 
     // show clicked id
     document.getElementById(id).classList.remove('hidden');
