@@ -23,6 +23,16 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
     if(cashoutPin === '7575'){
         alert('Cashout Withdraw Complete');
         setBalance(newBalance);
+        // transaction history      
+        const historyContainer = document.getElementById('history-container');
+        const history = document.createElement("div");
+        history.innerHTML = `
+        <div class="history-card bg-primary rounded-sm p-3 text-white">
+            cashout withdraw of ${cashoutAmount} taka Successfully completed , Agent Account No. ${cashoutAgentNum}, 
+            at ${new Date};
+        </div> 
+        ` ;
+        historyContainer.appendChild(history);
         return;
     }else{
         alert('Invalid Pin');
