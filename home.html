@@ -71,12 +71,15 @@
         <div class="buttons mt-6 grid grid-cols-3 gap-3">
           <button
             class="btn hover:bg-primary hover:text-white flex-col h-full p-5"
+            
+            onclick="showOnly('add-money')"
           >
             <img src="./assets/opt-1.png" alt="" />
             <h2 class="font-semibold text-[1rem]">Add Money</h2>
           </button>
           <button
             class="btn hover:bg-primary hover:text-white flex-col h-full p-5"
+            onclick="showOnly('cash-out')"
           >
             <img src="./assets/opt-2.png" alt="" />
             <h2 class="font-semibold text-[1rem]">Cashout</h2>
@@ -110,7 +113,7 @@
     </section>
 
     <!-- Add money from -->
-    <section class="w-11/12 mx-auto py-8">
+    <section id="add-money" class="w-11/12 mx-auto py-8">
         <h2 class="font-bold mb-4">Add Money</h2>
         <div class="w-full">
             <fieldset
@@ -167,7 +170,7 @@
         </div>
     </section>
     <!-- cashout Form -->
-    <section class="w-11/12 mx-auto py-8 hidden">
+    <section id="cash-out" class="w-11/12 mx-auto py-8 hidden">
         <h2 class="font-bold mb-4">Cash Out</h2>
         <div class="w-full">
             <fieldset
