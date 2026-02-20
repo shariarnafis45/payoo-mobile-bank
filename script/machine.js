@@ -28,11 +28,13 @@ function showOnly(id){
     const cashOut = document.getElementById('cash-out');
     const transaction = document.getElementById('history');
     const transferMoney = document.getElementById('transfer-money');
+    const getBonus = document.getElementById('coupon');
     // hide all 
     addMoney.classList.add('hidden');
     cashOut.classList.add('hidden');
     transaction.classList.add('hidden');
     transferMoney.classList.add('hidden');
+    getBonus.classList.add('hidden');
 
     // show clicked id
     document.getElementById(id).classList.remove('hidden');

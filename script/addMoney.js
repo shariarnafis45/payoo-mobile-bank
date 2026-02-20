@@ -40,6 +40,7 @@ document.getElementById('add-money-btn').addEventListener('click',  function(){
         ` ;
         historyContainer.appendChild(history);
         
+        
     }
     else{
         alert('Invalid Pin')
