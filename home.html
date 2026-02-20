@@ -104,6 +104,7 @@
           </button>
           <button
             class="btn hover:bg-primary hover:text-white flex-col h-full p-5"
+            onclick="showOnly('history')"
           >
             <img src="./assets/opt-6.png" alt="" />
             <h2 class="font-semibold text-[1rem]">Transaction</h2>
@@ -216,6 +217,14 @@
             </fieldset>
         </div>
     </section>
+
+    <!-- transaction History -->
+     <section id="history" class="w-11/12 mx-auto py-8 hidden">
+        <h2 class="font-bold mb-4">Transaction</h2>
+        <div id="history-container" class="history-container space-y-3">
+        
+        </div>
+     </section>
 
     
 

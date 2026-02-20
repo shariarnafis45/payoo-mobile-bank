@@ -28,6 +28,17 @@ document.getElementById('add-money-btn').addEventListener('click',  function(){
                from ${bank} 
                at ${new Date()}`) 
         setBalance(newBalance);
+
+        // transaction history      
+        const historyContainer = document.getElementById('history-container');
+        const history = document.createElement("div");
+        history.innerHTML = `
+        <div class="history-card bg-primary rounded-sm p-3 text-white">
+            Add Money of ${addAmount} taka Successfully added from ${bank} , Account No. ${accountNo}, 
+            at ${new Date};
+        </div> 
+        ` ;
+        historyContainer.appendChild(history);
         
     }
     else{
